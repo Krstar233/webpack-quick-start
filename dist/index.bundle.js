@@ -1,2 +1,0 @@
-(self.webpackChunkwebpack_demo=self.webpackChunkwebpack_demo||[]).push([[826],{138:()=>{console.log("hello world")}},e=>{e(e.s=138)}]);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguYnVuZGxlLmpzIiwibWFwcGluZ3MiOiJ3RkFBQUEsUUFBUUMsSUFBSSxjIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vd2VicGFjay1kZW1vLy4vc3JjL2luZGV4LmpzIl0sInNvdXJjZXNDb250ZW50IjpbImNvbnNvbGUubG9nKFwiaGVsbG8gd29ybGRcIikiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJzb3VyY2VSb290IjoiIn0=
