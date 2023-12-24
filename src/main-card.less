@@ -1,0 +1,68 @@
+@progress-stripe-width: 30px;
+@progress-background-size: 85px;
+
+.progress-bar-done {
+    background-color: #52BD95;
+    position: relative;
+}
+
+.progress-bar {
+    background-color: #52BD95;
+    position: relative;
+}
+
+.blue-progress-bar-done {
+    background-color: #3366FF;
+    position: relative;
+}
+
+.blue-progress-bar {
+    background-color: #3366FF;
+    position: relative;
+}
+
+.blue-progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        #5C85FF,
+        #5C85FF @progress-stripe-width,
+        transparent,
+        transparent @progress-stripe-width,
+        transparent,
+        transparent 2*@progress-stripe-width
+    );
+    background-size: @progress-background-size; /* 控制条纹的宽度和间距 */
+    animation: moveStripes 0.38s linear infinite; /* 添加动画效果，2秒完成一次循环 */
+}
+
+.progress-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        #97D7BF,
+        #97D7BF @progress-stripe-width,
+        transparent,
+        transparent @progress-stripe-width,
+        transparent,
+        transparent 2*@progress-stripe-width
+    );
+    background-size: @progress-background-size; /* 控制条纹的宽度和间距 */
+    animation: moveStripes 0.38s linear infinite; /* 添加动画效果，2秒完成一次循环 */
+}
+
+@keyframes moveStripes {
+    to {
+        background-position: @progress-background-size 0; /* 移动条纹的位置，使其在 X 轴上水平移动 */
+    }
+}

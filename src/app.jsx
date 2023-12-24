@@ -1,11 +1,22 @@
 import React from "react";
-import { WebRTC } from "./webrtc.jsx";
+import { MainCard } from "./main-card.jsx";
 
 export function App() {
+  const styles = {
+    fileUploader: {
+      position: "absolute",
+      width: "900px",
+      top: "35%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+    },
+  };
+
   return (
     <>
-      <h1>Hello World</h1>
-      <WebRTC></WebRTC>
+      <div style={styles.fileUploader}>
+        <MainCard></MainCard>
+      </div>
     </>
   );
 }

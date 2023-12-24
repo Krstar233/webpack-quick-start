@@ -17,6 +17,14 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      {
+        test: /.css$/,
+        use: ["style-loader", "css-loader"],
+      },
+      {
+        test: /.less$/,
+        use: ["style-loader", "css-loader", "less-loader"],
+      },
     ],
   },
   devtool: "inline-source-map",
@@ -29,6 +37,9 @@ module.exports = {
         key: fs.readFileSync("./example.com.key"),
         cert: fs.readFileSync("./example.com.crt"),
       },
+    },
+    client: {
+      overlay: false,
     },
   },
   plugins: [

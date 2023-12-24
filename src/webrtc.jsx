@@ -3,7 +3,7 @@ import "./webrtc.js";
 
 export function WebRTC() {
   return (
-    <div>
+    <>
       <h1>Welcome to WebRTC!</h1>
       <div id="buttons">
         <button className="mdc-button mdc-button--raised" id="cameraBtn">
@@ -79,6 +79,6 @@ export function WebRTC() {
         </div>
         <div className="mdc-dialog__scrim"></div>
       </div>
-    </div>
+    </>
   );
 }
